@@ -1,0 +1,29 @@
+{
+    "name": "JS-NodeJS-Boilerplate",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.8.4",
+        "cors": "^2.8.4",
+        "express": "^4.9.8",
+        "express-handlebars": "^3.0.0",
+        "forever": "^0.13.0",
+        "jsonwebtoken": "^8.3.0",
+        "lodash": "^4.17.5",
+        "mongoose": "^5.3.7",
+        "nodemon": "^1.18.5",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "stapes": "^1.0.0",
+        "sync-request": "^6.0.0"
+    },
+    "devDependencies": {},
+    "pkg": {
+        "scripts": "public/js/*.js",
+        "assets": "views/**/*"
+    },
+    "bin": "app.js"
+}

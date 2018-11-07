@@ -1,0 +1,25 @@
+<script type="text/javascript" src="js/app/app.landing.js"></script>
+
+<div class="row m-0">
+    <div class="col px-0">
+        {{> nav}}
+    </div>
+</div>
+
+<div class="row outputRes">
+    <div class="col px-0" id="user-container">
+        
+    </div>
+</div>
+
+<script type="text/x-handlebars-template" id="users-template">
+    \{{#if msg}}
+        <h4>List of Users</h4>
+    \{{/if}}
+    \{{#each msg}}
+    <li>
+        <span class="meta">\{{name}} </span>
+    </li>
+    \{{/each}}
+    
+</script>
