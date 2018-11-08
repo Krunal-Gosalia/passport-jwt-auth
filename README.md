@@ -45,7 +45,10 @@ It performs basic operation with Client-Server Architecture as mentioned below:
     ```
     ![Login](/public/images/login-genToken.png?raw=true "Login with valid credentials")
     
-  - Use the token to view all the users registered on the system. Also try to alter token and see the response.
-     ![Authorized](/public/images/authorized-token.png?raw=true "Authorized User")
+  - Use the token to view all the users registered on the system. 
+    - Token should be passed in header with "Bearer " prepend as shown in below screenshot
+    ![Authorized](/public/images/authorized-token.png?raw=true "Authorized User")
+
+    - Try altering the token by deleting or adding few characters and notice the difference in response.
     ![Unauthorized](/public/images/unauthorized-token.png?raw=true "Unauthorized Token")
     
