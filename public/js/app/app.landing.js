@@ -15,6 +15,7 @@ var landingPage = Stapes.subclass({
 
     initEvents: function() {
 
+        console.log("Token generated - " + localStorage.getItem("token"));
         $("#nav-user").on('click', function(e) {
             e.preventDefault();
             DAL.user.getAll(function(users) {

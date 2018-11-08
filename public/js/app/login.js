@@ -31,7 +31,6 @@ var loginPage = Stapes.subclass({
 
             DAL.auth.userLogin(useremail, password, function(val) {
                 if (val.success) {
-                    console.log(val.token);
                     localStorage.setItem("token", val.token);
                     window.location = "/index";
                 } else {
