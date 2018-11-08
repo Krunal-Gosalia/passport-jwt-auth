@@ -37,4 +37,15 @@ It performs basic operation with Client-Server Architecture as mentioned below:
     ```json
     { "name": "Test", "email": "test@gmail.com", "password": "test" }
     ```
-    ![Alt text](/public/images/register-postman.png?raw=true "Register new user")
+    ![Register User](/public/images/register-postman.png?raw=true "Register new user")
+    
+ - Login with newly created user & valid credentials to generate JWT token:
+    ```json
+    {"user_email": "test@gmail.com", "password": "test"}
+    ```
+    ![Login](/public/images/login-genToken.png?raw=true "Login with valid credentials")
+    
+  - Use the token to view all the users registered on the system. Also try to alter token and see the response.
+     ![Authorized](/public/images/authorized-token.png?raw=true "Authorized User")
+    ![Unauthorized](/public/images/unauthorized-token.png?raw=true "Unauthorized Token")
+    
