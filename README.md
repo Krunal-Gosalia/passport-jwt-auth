@@ -32,3 +32,9 @@ It performs basic operation with Client-Server Architecture as mentioned below:
 
 4. Launch the browser - http://localhost:8000/
 
+# Run the test using Postman #
+  - Register new user using Post request with json - http://localhost:8000/addUser
+    ```json
+    { "name": "Test", "email": "test@gmail.com", "password": "test" }
+    ```
+    ![Alt text](/public/images/register-postman.png?raw=true "Register new user")
